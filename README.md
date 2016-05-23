@@ -13,13 +13,15 @@
 | cat FILE_NAME            	| wypisuje zawartość pliku na wyjście standardowe                       	|
 | cat file1 file2 > file12 	| Łączy pliki file1 i file2 w jeden file12                              	|
 | rm -rf NAZWA_FOLDERU     	| usuwa folder z całą zawartością                                       	|
+| echo `date`             	| wyswietlanie aktualnej daty (zauważ odwrotne apostrofy)                   |
+| echo `date +%s`     	    | #wyswietla timestamp, przydatny np. do obliczenia czasu wykonywania skryptu   |
 
-echo `date`               #wyswietlanie aktualnej daty (zauważ odwrotne apostrofy)
-echo `date +%s`           #wyswietla timestamp, przydatny np. do obliczenia czasu wykonywania skryptu
+               
+           
 
 
 
--------------------------------------------------------------------------------------------------------
+```bash
 
 var=0                     #inicjalizacja licznika
 
@@ -32,10 +34,7 @@ for i in ${tablica[@]}    #iteruje po elementach tablicy
 
 number=$[$RANDOM%1000]    #losowa liczba z zakresu 1-1000
 
-
--------------------------------------------------------------------------------------------------------
-
-
+```
 
 Operatory porównania:
 http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO-11.html
