@@ -36,6 +36,17 @@ number=$[$RANDOM%1000]    #losowa liczba z zakresu 1-1000
 
 ```
 
+<br><br>
+Wpisywanie tekstu do pliku bez outputu do konsoli
+```bash
+cat <<EOF > test.txt  #Jeżeli chcemy tryb append - <<EOF >>
+some text dsa ad ads as
+dsada dsa da d 
+dsadad d sa dsa s
+EOF                   #Musi zaczynać się od początku inaczej mamy error
+```
+
+
 Operatory porównania:
 http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO-11.html
 
